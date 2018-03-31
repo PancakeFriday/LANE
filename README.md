@@ -10,7 +10,7 @@ In the release folder, you can find the .love file, which can be run in linux by
 ```bash
 love LANE.love
 ```
-or a zip file for windows, depending on your architecture, which contains an *.exe file
+or a zip file for windows, depending on your architecture, which contains an *.exe file.
 
 The interface
 ---
@@ -34,7 +34,9 @@ The top-most buttons in the spritesheet are `Save` and `Load`. You can use these
 Clicking on the page icon will open a dialog, where you are prompted to locate the spritesheet that you would like to import into the editor. The sheet is then cut into a grid of size  `Frame width` * `Frame height`, which you can provide in the input fields below.
 
 You can try for example this simple spritesheet of the current main player (to be changed):
+
 ![Player](http://pancakegames.sofapizza.de:4000/assets/1/sheet.png)
+
 Here, frame width is 10 pixels and height is 14 pixels.
 
 Timeline
