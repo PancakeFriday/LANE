@@ -1,5 +1,4 @@
 local Mousefield = require "mousefield"
-local binser = require "binser"
 local suit = require "SUIT"
 
 Sprite = Object:extend()
