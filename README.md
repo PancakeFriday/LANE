@@ -13,7 +13,7 @@ I want to take the opportunity at this point to thank all the libraries, that I 
 tl;dr
 ---
 
-Download this [test.ani](https://raw.githubusercontent.com/PancakeFriday/LANE-Animation/master/test.ani) file and hit load in the editor. Have a look at the hotkeys below and try it out!
+Download this [test.ani](https://raw.githubusercontent.com/PancakeFriday/LANE-Animation/master/test.ani) file and hit load in the editor. Select "shooting" in the timeline as the current animation and don't forget to have a look at the hotkeys below!
 
 Downloading the editor
 ---

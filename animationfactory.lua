@@ -301,7 +301,7 @@ end
 function AnimationFactory:loadData(d)
 	local t = lume.deserialize(d)
 	for i,v in pairs(t.sprites) do
-		table.insert(self.sprites, Sprite.loadData(v))
+		self.sprites[i] = Sprite.loadData(v)
 	end
 	for i,v in pairs(t.animations) do
 		self.animations[i] = Animation.loadData(v, self.sprites)
