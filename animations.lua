@@ -44,7 +44,6 @@ function Animations:load()
 		Rotation = {values={{text="", n="d"}}, pos={x=7,y=120}, cb={checked=false}},
 		Scale = {values={{text="", n="x"}, {text="", n="y"}}, pos={x=7,y=190}, cb={checked=false}},
 	}
-	self.animations:newAnimation("test")
 end
 
 function Animations:setupWindows()
