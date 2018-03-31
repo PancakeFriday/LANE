@@ -1,11 +1,11 @@
 # LANE
 LÖVE animation editor
 
-This tutorial is copied from my [devlog](http://pancakegames.sofapizza.de:4000)
+This tutorial is copied from my [devlog](http://pancakegames.sofapizza.de:4000).
 
 The interface
 ---
-![Interface]({{ "/assets/1/interface.png" }})
+![Interface](http://pancakegames.sofapizza.de:4000/assets/1/interface.png)
 
 In the image above, you can see there are 5 distinct areas:
 1. Spritesheet area
@@ -15,7 +15,7 @@ In the image above, you can see there are 5 distinct areas:
 5. Properties
 
 In a test setup, they might look like this:
-![Interface]({{ "/assets/1/interface_filled.png" }})
+![Interface](http://pancakegames.sofapizza.de:4000/assets/1/interface_filled.png)
 
 Spritesheet area
 ---
