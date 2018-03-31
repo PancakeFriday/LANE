@@ -4,7 +4,6 @@ lume = require "lume"
 Object = require "classic"
 
 Gamestate = require "gamestate"
-local Skilltree = require "skilltree"
 local Animations = require "animations"
 
 love.graphics.setDefaultFilter("nearest", "nearest", 1)
@@ -33,7 +32,6 @@ end
 
 local gamestate_set = false
 function love.load()
-	Gamestate:register(Skilltree, "Skilltree")
 	Gamestate:register(Animations, "Animations")
 end
 
