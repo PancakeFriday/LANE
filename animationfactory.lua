@@ -58,6 +58,7 @@ end
 
 function Animation.loadData(d, sprites)
 	local a = Animation(sprites)
+	a.maxTime = d.maxTime
 	a.keys = d.keys
 	for i, key in pairs(a.keys) do
 		for time, value in pairs(key.frames) do
