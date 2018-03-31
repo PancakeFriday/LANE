@@ -237,10 +237,9 @@ function Animations:update(dt)
 			local v2x, v2y = gx-props.pos.x, gy-props.pos.y
 			local d1 = lume.distance(v1x,v1y, 0, 0)
 			local d2 = lume.distance(v2x,v2y, 0, 0)
-			local a = math.acos(((v1x*v2x)+(v1y*v2y))/(d1*d2))
+			local a = -math.acos(((v1x*v2x)+(v1y*v2y))/(d1*d2))
 			local dot = v1x*v2y-v2x*v1y
-			if dot < 0 then a = math.pi-a end
-			a = -a
+			if dot < 0 then a = -a end
 			props.rot = lume.round(pprops.rot + a, 0.001)
 		end
 	end
