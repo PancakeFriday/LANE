@@ -6,7 +6,7 @@ local theme = {}
 theme.cornerRadius = 4
 
 theme.color = {
-	normal   = {bg = { 66, 66, 66}, fg = {188,188,188}},
+	normal   = {bg = { 66, 66, 66}, fg = {255,255,255}},
 	hovered  = {bg = { 50,153,187}, fg = {255,255,255}},
 	active   = {bg = {255,153,  0}, fg = {225,225,225}}
 }
@@ -107,7 +107,9 @@ end
 
 function theme.Input(input, opt, x,y,w,h)
 	local utf8 = require 'utf8'
-	theme.drawBox(x,y,w,h, (opt.color and opt.color.normal) or theme.color.normal, opt.cornerRadius)
+	if opt.nobg == false then
+		theme.drawBox(x,y,w,h, (opt.color and opt.color.normal) or theme.color.normal, opt.cornerRadius)
+	end
 	x = x + 3
 	w = w - 6
 
@@ -121,10 +123,10 @@ function theme.Input(input, opt, x,y,w,h)
 	-- text
 	love.graphics.setColor((opt.color and opt.color.normal and opt.color.normal.fg) or theme.color.normal.fg)
 	love.graphics.setFont(opt.font)
-	love.graphics.print(input.text, x, y+(h-th)/2)
+	love.graphics.print(input[opt.field], x, y+(h-th)/2)
 
 	-- candidate text
-	local tw = opt.font:getWidth(input.text)
+	local tw = opt.font:getWidth(input[opt.field])
 	local ctw = opt.font:getWidth(input.candidate_text.text)
 	love.graphics.setColor((opt.color and opt.color.normal and opt.color.normal.fg) or theme.color.normal.fg)
 	love.graphics.print(input.candidate_text.text, x + tw, y+(h-th)/2)
@@ -141,8 +143,8 @@ function theme.Input(input, opt, x,y,w,h)
 
 		love.graphics.setLineWidth(1)
 		love.graphics.setLineStyle('rough')
-		love.graphics.line(x + opt.cursor_pos + ws, y + (h-th)/2,
-		                   x + opt.cursor_pos + ws, y + (h+th)/2)
+		love.graphics.line(x + opt[opt.field..".cursor_pos"] + ws, y + (h-th)/2,
+		                   x + opt[opt.field..".cursor_pos"] + ws, y + (h+th)/2)
 	end
 
 	-- reset scissor

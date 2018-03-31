@@ -3,6 +3,18 @@ LÖVE animation editor
 
 This tutorial is copied from my [devlog](http://pancakegames.sofapizza.de:4000).
 
+Disclaimer
+---
+I want to take the opportunity at this point to thank all the libraries, that I have been using to make this editor:
+- [classic](https://github.com/rxi/classic)
+- [gamera](https://github.com/kikito/gamera)
+- [lume](https://github.com/rxi/lume)
+
+tl;dr
+---
+
+Download this [test.ani](https://raw.githubusercontent.com/PancakeFriday/LANE-Animation/master/test.ani) file and hit load in the editor. Have a look at the hotkeys below and try it out!
+
 Downloading the editor
 ---
 
