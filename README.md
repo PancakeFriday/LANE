@@ -9,6 +9,7 @@ I want to take the opportunity at this point to thank all the libraries, that I 
 - [classic](https://github.com/rxi/classic)
 - [gamera](https://github.com/kikito/gamera)
 - [lume](https://github.com/rxi/lume)
+- [SUIT](https://github.com/vrld/suit)
 
 tl;dr
 ---
